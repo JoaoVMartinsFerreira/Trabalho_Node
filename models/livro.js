@@ -7,7 +7,7 @@ const livroSchema = new Schema({
   titulo: { type: String, required: true },
   autor: { type: Schema.Types.ObjectId,ref:'Autor', required: true },
   isbn: {type: String, required: true},
-  genero: [{type: Schema.Types.ObjectId, ref: 'Genero'}],
+  genero: [{type: Schema.Types.ObjectId, ref: 'Genero',required:false}],
   url: { type: String, required: true},
   });
 
